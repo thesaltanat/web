@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Abid Supto - Software Engineer & Researcher</title>
+    <meta name="description" content="Portfolio of Al Abid Supto - Software Engineer at Varygen Corp Limited, specializing in NLP, computer vision, and web development.">
+    <meta name="keywords" content="Al Abid Supto, Software Engineer, NLP, Computer Vision, Laravel, Web Development">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Add structured data for better SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Al Abid Supto",
+        "jobTitle": "Software Engineer",
+        "worksFor": "Varygen Corp Limited",
+        "url": "https://www.linkedin.com/in/al-abid/"
+    }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-gray-800">Al Abid Supto</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-blue-600 transition-colors">Home</a>
+                    <a href="#about" class="hover:text-blue-600 transition-colors">About</a>
+                    <a href="#experience" class="hover:text-blue-600 transition-colors">Experience</a>
+                    <a href="#projects" class="hover:text-blue-600 transition-colors">Projects</a>
+                    <a href="#skills" class="hover:text-blue-600 transition-colors">Skills</a>
+                    <a href="#contact" class="hover:text-blue-600 transition-colors">Contact</a>
+                </div>
+                <button class="md:hidden" id="mobile-menu-button">
+                    <i class="ph ph-list text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-4 py-3 space-y-3">
+                <a href="#home" class="block hover:text-blue-600 transition-colors">Home</a>
+                <a href="#about" class="block hover:text-blue-600 transition-colors">About</a>
+                <a href="#experience" class="block hover:text-blue-600 transition-colors">Experience</a>
+                <a href="#projects" class="block hover:text-blue-600 transition-colors">Projects</a>
+                <a href="#skills" class="block hover:text-blue-600 transition-colors">Skills</a>
+                <a href="#contact" class="block hover:text-blue-600 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-16 bg-gradient-to-b from-blue-50 to-white">
+        <div class="container mx-auto px-4 py-16">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1 text-center md:text-left">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">Al Abid Supto</h1>
+                    <p class="text-xl text-gray-600 mb-8">Software Engineer | Researcher | Web Developer</p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Software Engineer at Varygen Corp Limited, specializing in web development, NLP, and computer vision research.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#contact" class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-3 rounded-full hover:opacity-90 transition-all transform hover:scale-105 shadow-lg">Get in Touch</a>
+                        <a href="#" class="bg-white text-gray-800 px-8 py-3 rounded-full hover:bg-gray-50 transition-all transform hover:scale-105 shadow-lg border border-gray-200">Download Resume</a>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 flex justify-center md:justify-end">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full blur-2xl opacity-20 animate-pulse"></div>
+                        <img src="abid.jpg" alt="Al Abid Supto" class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-2xl border-4 border-white relative z-10">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gradient-to-b from-white to-blue-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">About Me</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-xl font-semibold mb-4 text-blue-600">Professional Background</h3>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            I am a passionate Software Engineer with 3 years of research experience in Natural Language Processing and Computer Vision. Currently working at Varygen Corp Limited, I specialize in developing robust web applications and conducting innovative research in AI.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed">
+                            My research focuses on medical image segmentation, where I've developed the MultiResUNet model for improved accuracy in medical data analysis.
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-xl font-semibold mb-4 text-blue-600">Personal Details</h3>
+                        <ul class="space-y-4 text-gray-600">
+                            <li class="flex items-center space-x-3">
+                                <i class="ph ph-drop text-red-500 text-xl"></i>
+                                <span><span class="font-medium">Blood Group:</span> A+</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="ph ph-map-pin text-blue-500 text-xl"></i>
+                                <span><span class="font-medium">Location:</span> [Your Location]</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="ph ph-heart text-pink-500 text-xl"></i>
+                                <span><span class="font-medium">Hobbies:</span> Coding, Research, [Add more hobbies]</span>
+                            </li>
+                            <li class="flex items-center space-x-3">
+                                <i class="ph ph-graduation-cap text-indigo-500 text-xl"></i>
+                                <span><span class="font-medium">Education:</span> [Your Education Details]</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Work Experience</h2>
+            <div class="max-w-3xl mx-auto space-y-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Software Engineer</h3>
+                    <p class="text-gray-600 mb-2">Varygen Corp Limited</p>
+                    <p class="text-gray-500 mb-4">[Start Date] - Present</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Developing web applications using Laravel and Tailwind CSS</li>
+                        <li>Leading research initiatives in NLP and computer vision</li>
+                        <li>Implementing innovative solutions for client projects</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Research Assistant</h3>
+                    <p class="text-gray-600 mb-2">[Institution Name]</p>
+                    <p class="text-gray-500 mb-4">[Duration]</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li>Conducted research in medical image segmentation</li>
+                        <li>Developed and implemented the MultiResUNet model</li>
+                        <li>Published research papers in renowned journals</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- MultiResUNet Project -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden project-card group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://via.placeholder.com/600x400" alt="MultiResUNet Project" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                            <div class="p-4 text-white">
+                                <h4 class="font-semibold">View Details</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">MultiResUNet Model</h3>
+                        <p class="text-gray-600 mb-4">Advanced deep learning model for medical image segmentation with improved accuracy.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-medium">Python</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-sm font-medium">TensorFlow</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-600 rounded-full text-sm font-medium">Computer Vision</span>
+                        </div>
+                        <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium group">
+                            View Project 
+                            <i class="ph ph-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Dashboard Project -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden project-card group">
+                    <div class="relative overflow-hidden">
+                        <img src="https://via.placeholder.com/600x400" alt="Dashboard Project" class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                            <div class="p-4 text-white">
+                                <h4 class="font-semibold">View Details</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Admin Dashboard</h3>
+                        <p class="text-gray-600 mb-4">Modern dashboard interface built with Laravel and Tailwind CSS.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-red-100 text-red-600 rounded-full text-sm font-medium">Laravel</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-medium">Tailwind CSS</span>
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-600 rounded-full text-sm font-medium">JavaScript</span>
+                        </div>
+                        <a href="#" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium group">
+                            View Project 
+                            <i class="ph ph-arrow-right ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gradient-to-b from-blue-50 to-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">Skills & Expertise</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <div class="text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
+                    <i class="ph ph-code text-5xl text-blue-600 mb-4"></i>
+                    <h3 class="font-semibold mb-3">Frontend Development</h3>
+                    <p class="text-gray-600 text-sm">HTML, CSS, JavaScript, Bootstrap, Tailwind CSS</p>
+                </div>
+                <div class="text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
+                    <i class="ph ph-database text-5xl text-indigo-600 mb-4"></i>
+                    <h3 class="font-semibold mb-3">Backend Development</h3>
+                    <p class="text-gray-600 text-sm">Laravel, SQL, API Development</p>
+                </div>
+                <div class="text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
+                    <i class="ph ph-brain text-5xl text-purple-600 mb-4"></i>
+                    <h3 class="font-semibold mb-3">AI & Research</h3>
+                    <p class="text-gray-600 text-sm">NLP, Computer Vision, Deep Learning</p>
+                </div>
+                <div class="text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
+                    <i class="ph ph-git-branch text-5xl text-green-600 mb-4"></i>
+                    <h3 class="font-semibold mb-3">Tools & Version Control</h3>
+                    <p class="text-gray-600 text-sm">Git, GitHub, VS Code</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-b from-white to-blue-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">Get in Touch</h2>
+            <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Let's Connect</h3>
+                        <div class="space-y-6">
+                            <a href="https://www.linkedin.com/in/al-abid/" target="_blank" 
+                               class="flex items-center space-x-4 text-gray-600 hover:text-blue-600 group p-4 rounded-xl hover:bg-blue-50 transition-all">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <i class="ph ph-linkedin-logo text-2xl text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">LinkedIn</h4>
+                                    <p class="text-sm text-gray-500">Connect with me professionally</p>
+                                </div>
+                                <i class="ph ph-arrow-right ml-auto opacity-0 group-hover:opacity-100 transform group-hover:translate-x-2 transition-all"></i>
+                            </a>
+                            <a href="https://github.com/mrabid" target="_blank" 
+                               class="flex items-center space-x-4 text-gray-600 hover:text-gray-900 group p-4 rounded-xl hover:bg-gray-50 transition-all">
+                                <div class="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <i class="ph ph-github-logo text-2xl text-gray-900"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">GitHub</h4>
+                                    <p class="text-sm text-gray-500">Check out my code repositories</p>
+                                </div>
+                                <i class="ph ph-arrow-right ml-auto opacity-0 group-hover:opacity-100 transform group-hover:translate-x-2 transition-all"></i>
+                            </a>
+                            <a href="mailto:mdalabidsupto@gmail.com" 
+                               class="flex items-center space-x-4 text-gray-600 hover:text-red-600 group p-4 rounded-xl hover:bg-red-50 transition-all">
+                                <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <i class="ph ph-envelope text-2xl text-red-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Email</h4>
+                                    <p class="text-sm text-gray-500">Send me a message directly</p>
+                                </div>
+                                <i class="ph ph-arrow-right ml-auto opacity-0 group-hover:opacity-100 transform group-hover:translate-x-2 transition-all"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-6 text-gray-800">Send a Message</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                            <input type="text" id="name" name="name" required 
+                                   class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" name="email" required 
+                                   class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="4" required 
+                                      class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"></textarea>
+                        </div>
+                        <button type="submit" 
+                                class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-xl hover:opacity-90 transition-all transform hover:scale-[1.02] focus:scale-[0.98] shadow-lg">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 text-center md:text-left">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+                        <li><a href="#about" class="hover:text-blue-400">About</a></li>
+                        <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+                        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://www.linkedin.com/in/al-abid/" class="hover:text-blue-400">LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-blue-400">GitHub</a></li>
+                        <li><a href="#" class="hover:text-blue-400">Resume</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-400">&copy; 2024 Al Abid Supto. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
