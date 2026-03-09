@@ -1,0 +1,30 @@
+<IfModule mod_headers.c>
+    # Logic based on Request URI
+    SetEnvIf Request_URI "\.(html|xml|json)$" no_cache_content
+    SetEnvIf Request_URI "^/$" no_cache_content
+
+    # Static assets
+    SetEnvIf Request_URI "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf|svg|webp|mp4|webm)$" cache_content
+
+    # Apply No Cache headers
+    Header set Cache-Control "no-cache, no-store, must-revalidate, max-age=0" env=no_cache_content
+    Header set Pragma "no-cache" env=no_cache_content
+    Header set Expires "0" env=no_cache_content
+
+    # Apply Static Cache headers
+    Header set Cache-Control "max-age=31536000, public" env=cache_content
+    Header unset Pragma env=cache_content
+    Header unset Expires env=cache_content
+</IfModule>
+
+RewriteEngine On
+
+# Proxy WebSocket connections
+RewriteCond %{REQUEST_URI} !^/\.well-known/
+RewriteCond %{HTTP:Upgrade} websocket [NC]
+RewriteCond %{HTTP:Connection} upgrade [NC]
+RewriteRule ^(.*)$ http://127.0.0.1:3000/$1 [P,L]
+
+# Proxy all other requests to Next.js
+RewriteCond %{REQUEST_URI} !^/\.well-known/
+RewriteRule ^(.*)$ http://127.0.0.1:3000/$1 [P,L]

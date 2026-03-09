@@ -1,35 +1,75 @@
-# Sample Portfolio - Al Abid Supto
+# Dcastalia Next.js Template
 
-A modern, responsive portfolio website showcasing my skills, projects, and professional experience.
+This is a Next.js project built with the App Router, featuring a robust set of UI components, animations, and API integrations.
 
-## Features
+## 🚀 Technologies
 
-- Responsive design that works on all devices
-- Smooth scrolling navigation
-- Mobile-friendly navigation menu
-- Contact form
-- Project showcase section
-- Skills and expertise display
-- Modern animations and transitions
-- Clean and professional design
+- **Framework**: [Next.js 15+](https://nextjs.org/) (App Router)
+- **Styling**: 
+  - [Tailwind CSS](https://tailwindcss.com/)
+  - [Styled Components](https://styled-components.com/)
+  - [Bootstrap 5](https://getbootstrap.com/)
+- **Animations**:
+  - [GSAP](https://greensock.com/gsap/)
+  - [Framer Motion](https://www.framer.com/motion/)
+- **Icons**:
+  - [FontAwesome](https://fontawesome.com/)
+  - [Lucide React](https://lucide.dev/)
+  - [React Icons](https://react-icons.github.io/react-icons/)
+- **Carousel/Sliders**:
+  - [Swiper](https://swiperjs.com/)
+  - [Embla Carousel](https://www.embla-carousel.com/)
+- **Forms**: [React Hook Form](https://react-hook-form.com/) with [Zod](https://zod.dev/) (or similar resolvers)
+- **HTTP Client**: [Axios](https://axios-http.com/)
 
-## Technologies Used
+## 📂 Project Structure
 
-- HTML5
-- Tailwind CSS (via CDN)
-- JavaScript (Vanilla)
-- Phosphor Icons
+```text
+├── public/                 # Static assets (images, fonts, etc.)
+├── scripts/                # Utility scripts
+├── src/
+│   ├── animations/         # Reusable GSAP/Framer Motion animations
+│   ├── api/                # API configurations
+│   ├── app/                # Next.js App Router (layouts, pages, groups)
+│   ├── components/         # Common UI components (buttons, inputs, cards)
+│   ├── config/             # App configuration files
+│   ├── hooks/              # Custom React hooks
+│   ├── lib/                # Third-party library initializations
+│   ├── modules/            # Feature-specific components and logic
+│   ├── render/             # Rendering utilities or specialized components
+│   ├── services/           # Data fetching and API services
+│   ├── store/              # State management (if any)
+│   ├── styles/             # Global CSS and theme files
+│   └── utils/              # Helper functions and constants
+├── next.config.mjs         # Next.js configuration
+├── tailwind.config.js      # Tailwind CSS configuration
+└── package.json            # Project dependencies and scripts
+```
 
-## Live Demo
+## 🛠️ Getting Started
 
-Visit the live portfolio at: https://mrabid.github.io/Sample-Portfolio1
+1. **Install Dependencies**:
+   ```bash
+   yarn install
+   ```
 
-## Contact
+2. **Set Up Environment**:
+   Create a `.env.local` file based on `.env`.
 
-- LinkedIn: [Al Abid Supto](https://www.linkedin.com/in/al-abid/)
-- GitHub: [@mrabid](https://github.com/mrabid)
-- Email: mdalabidsupto@gmail.com
+3. **Run Development Server**:
+   ```bash
+   yarn dev
+   ```
 
-## License
+4. **Build for Production**:
+   ```bash
+   yarn build
+   ```
 
-This project is open source and available under the MIT License.
+## 🧹 Maintenance
+
+The project has been indexed and cleaned of unnecessary files (e.g., duplicate lock files, OS-specific files, and build artifacts).
+
+## 📄 License
+
+Private - Dcastalia
