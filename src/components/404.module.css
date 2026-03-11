@@ -1,0 +1,79 @@
+.errorPage {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.errorImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% + 120px);
+  height: calc(100% + 120px);
+  transform: rotate(180deg);
+  background-blend-mode: darken;
+  background-image: url('/images/static/background_palmal.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.errorContent {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+  padding: 48px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 32px;
+  backdrop-filter: blur(10px);
+}
+
+.errorTitle {
+  font-family: inherit;
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 0 0 24px;
+  color: #fff;
+}
+
+.errorSubtitle {
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0 0 32px;
+  color: #eee;
+}
+
+.errorDescription {
+  font-family: inherit;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin: 0 0 48px;
+  color: #ccc;
+  max-width: 600px;
+}
+
+.errorBtn {
+  margin-top: 24px;
+  padding: 12px 32px;
+  background: #0070f3;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+  display: inline-block;
+}
+
+.errorBtn:hover {
+  background: #0051a8;
+}
+

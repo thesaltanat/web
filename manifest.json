@@ -1,0 +1,32 @@
+{
+	"name": "THE SALTANAT - A Green Oasis of opportunities.",
+	"short_name": "SALTANAT",
+	"description": "Join us in redefining the future of hospitality investment. Discover the potential of a partnership that blends tradition with innovation, and profitability with purpose.",
+	"theme_color": "#23351E",
+	"background_color": "#EEECE3",
+	"start_url": "/",
+	"scope": "/",
+	"display": "standalone",
+	"display_override": ["minimal-ui", "fullscreen"],
+	"orientation": "portrait",
+	"icons": [
+		{
+			"src": "/images/static/logo-192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/images/static/logo-512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any maskable"
+		},
+		{
+			"src": "/images/static/logo-1024.png",
+			"sizes": "1024x1024",
+			"type": "image/png",
+			"purpose": "any"
+		}
+	]
+}

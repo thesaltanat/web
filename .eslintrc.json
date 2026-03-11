@@ -1,0 +1,27 @@
+{
+	"root": true,
+	"extends":  ["next", "next/core-web-vitals"],
+	"plugins": ["react"],
+	"parserOptions": {
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"rules": {
+		"react/jsx-key": "warn",
+		"no-unused-vars": "warn",
+		"react/react-in-jsx-scope": "off",
+		"no-console": "warn",
+		"no-debugger": "warn",
+		"react/prop-types": "off",
+		"@next/next/no-img-element": "off",
+		"no-eval": "error",
+		"no-implied-eval": "error",
+		"react/display-name": "warn",
+		"react-hooks/exhaustive-deps": "warn"
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	}
+}
